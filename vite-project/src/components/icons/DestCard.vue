@@ -13,7 +13,7 @@ import {ref} from "vue";
 const props = defineProps({
     Destination: Object,
 });
-
+console.log(props)
 //clicker logic
 const clicked = ref(0);
 function increment() {
