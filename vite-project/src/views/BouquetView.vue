@@ -1,8 +1,17 @@
 <template>
-  <div class="about">
+  <div class="bouquet">
     <h1>This is an about page</h1>
+
+     <PickedCard v-for="bou in bouquet"
+    :key="bou.name"
+    :Picked="bou"/>
   </div>
 </template>
+
+<script setup>
+import bouquet from '@/components/FlowerCard.vue';
+
+</script>
 
 <style>
 @media (min-width: 1024px) {
