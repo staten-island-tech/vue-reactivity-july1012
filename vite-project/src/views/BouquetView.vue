@@ -1,6 +1,6 @@
 <template>
   <div class="bouquet">
-    <h1>This is an about page</h1>
+    <h1>This is your bouquet</h1>
 
      <PickedCard v-for="bou in bouquet"
     :key="bou.name"
