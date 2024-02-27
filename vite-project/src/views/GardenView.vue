@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <FlowerCard v-for="flower in flowers" 
+  <div class="cards">
+    <FlowerCard class="cards" v-for="flower in flowers" 
     :key="flower.name" 
     :Flower="flower" />
 
@@ -20,47 +20,59 @@ import PickedCard from '@/components/PickedCard.vue';
 
 const flowers = [
         {
-          name: "✧༺♥༻∞", //tulip
+          name: "✧༺♥༻∞", 
          picked: false,
           price: 1300,
-          img: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80&quot;",
+          img: "./imgs/blue.JPG",
         },
         {
           name: "𓆩♡𓆪",
             picked: false,
           price: 800,
-          img: "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1476&q=80&quot;",
+          img: "/imgs/lake.JPG",
         },
         {
           name: "*:･ﾟ✧*:･ﾟ",
             picked: false,
           price: 1200,
-          img: "https://images.unsplash.com/photo-1547138494-97041dec734b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80&quot;",
+          img: "/imgs/upsidedown.JPG",
         },
         {
           name: "'*•.¸♡ ♡¸.•*'",
             picked: false,
           price: 900,
-          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80&quot;",
+          img: "/imgs/yellow.jpg",
         },
         {
           name: "˚୨୧⋆｡˚ ⋆",
             picked: false,
           price: 400,
-          img: "https://images.unsplash.com/photo-1511497584788-876760111969?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80&quot;",
+          img: "/imgs/pink.JPG",
         },
         {
           name: "₍ ᐢ.ˬ.ᐢ₎˚୨୧",
             picked: false,
           price: 800,
-          img: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&quot;",
+          img: "/imgs/tulip.JPG",
         },
         {
           name: "‧̍̊˙˚˙ᵕ꒳ᵕ˙˚˙",
             picked: false,
           price: 800,
-          img: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&quot;",
+          img: "/imgs/rose.JPG",
         },
+        {
+          name: "❥•°❀°•༢",
+            picked: false,
+          price: 800,
+          img: "/imgs/purple.JPG",
+        },
+        {
+          name: "-ˋˏ ༻❁༺ ˎˊ-",
+            picked: false,
+          price: 800,
+          img: "/imgs/orange.JPG",
+        }
       ]
       
   
@@ -68,5 +80,17 @@ const flowers = [
 </script>
 
 <style scoped>
-
+.cards{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  position: relative;
+  transition:0.7s;
+}
 </style>

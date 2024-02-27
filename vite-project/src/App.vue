@@ -11,8 +11,8 @@ import { RouterLink, RouterView } from 'vue-router'
       
 
       <nav>
-        <RouterLink to="/">Garden</RouterLink>
-        <RouterLink to="/bouquet">Bouquet</RouterLink>
+        <RouterLink to="/" class="router">Garden</RouterLink>
+        <RouterLink to="/bouquet" class="router">Bouquet</RouterLink>
       
       </nav>
     </div>
@@ -22,14 +22,16 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+.router{
+display:flex;
+flex-wrap:wrap;
+text-align: center;
+font-size: 15px;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
 }
 
 nav {

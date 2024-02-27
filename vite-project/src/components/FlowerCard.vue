@@ -2,9 +2,8 @@
     <div>
     <div id="flower-card">
          <h2>{{ Flower.name }}</h2>
-        <img :src="Flower.img" alt=""/>
-      
-        <button @click="pickMe">
+        <img :src="Flower.img" alt="" />
+        <button @click="pickMe" class=btn>
         <span v-if="picker">Picked!</span>
         <span v-else>Pick Me</span>
         </button> 
@@ -48,4 +47,9 @@ img{
     width: 300px;
     height: 350px;
     object-fit: cover;
-}</style>
+}
+.btn{
+
+}
+
+</style>
