@@ -3,6 +3,7 @@
     <div id="picked-card" v-if="Picked.picked">
          <h2>{{ Picked.name }}</h2>
         <img :src="Picked.img" alt=""/>
+        
       
     </div>
        
