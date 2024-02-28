@@ -1,16 +1,18 @@
 <template>
+  <div class="container">
+  <h1 class="header">choose me, love me</h1>
   <div class="cards">
     <FlowerCard class="cards" v-for="flower in flowers" 
     :key="flower.name" 
     :Flower="flower" />
 
-    <h2>This is your bouquet</h2>
+    <h2 class="about">This is your bouquet</h2>
 
-    <PickedCard 
+    <PickedCard class="cards"
     v-for="flower in flowers"
     :key="flower.name"
     :Picked="flower" />
-
+  </div>
   </div>
 </template>
 
@@ -80,7 +82,20 @@ const flowers = [
 </script>
 
 <style scoped>
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin:0rem auto;
+    justify-content: space-around;
+
+}
+.header{
+  display:flex;
+  justify-content:space-evenly;
+}
 .cards{
+  width:max-content;
   display: flex;
   flex-wrap:wrap;
   justify-content:space-evenly;

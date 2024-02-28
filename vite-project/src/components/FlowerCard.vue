@@ -48,8 +48,6 @@ img{
     height: 350px;
     object-fit: cover;
 }
-.btn{
 
-}
 
 </style>
