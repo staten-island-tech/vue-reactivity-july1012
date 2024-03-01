@@ -4,7 +4,8 @@
   <div class="cards">
     <FlowerCard class="cards" v-for="flower in flowers" 
     :key="flower.name" 
-    :Flower="flower" />
+    :Flower="flower"
+    :Picked="flower.picked" />
 
     <h2 class="about">This is your bouquet</h2>
 
