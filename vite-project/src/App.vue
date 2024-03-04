@@ -9,12 +9,12 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <div class="wrapper">
       
-
+<!-- 
       <nav>
         <RouterLink to="/" class="router">Garden</RouterLink>
         <RouterLink to="/bouquet" class="router">Bouquet</RouterLink>
       
-      </nav>
+      </nav> -->
     </div>
   </header>
 
